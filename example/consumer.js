@@ -7,7 +7,7 @@ var Offset = kafka.Offset;
 var Client = kafka.Client;
 var argv = require('optimist').argv;
 var connectionString = argv.zookeeper || 'localhost:2181';
-var topic = argv.topic || 'topic1';
+var topic = argv.topic || 'test';
 
 var client = new Client(connectionString);
 var topics = [
