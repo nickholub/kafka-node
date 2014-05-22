@@ -12,7 +12,7 @@ var producer = new Producer(client);
 
 producer.on('ready', function () {
   var message = {
-    "dimensionSelector": "time=DAYS:publisherId:type",
+    "dimensionSelector": "time=MINUTES:publisherId:type",
     "numTimeUnits": "20",
     "publisherId": "1",
     "type": "1"
